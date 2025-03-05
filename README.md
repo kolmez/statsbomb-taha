@@ -99,3 +99,9 @@ docker run -it --rm -v $(pwd):/home -w /home statsbomb-parser python -m pycodest
 docker run -it --rm -v $(pwd):/home -w /home statsbomb-parser python -m pylint statsbomb tests *.py
 docker run -it --rm -v $(pwd):/home -w /home statsbomb-parser python -m pytest --disable-pytest-warnings --cov=statsbomb --cov-report=html --durations=5 tests/
 ```
+## FOR TAHA
+```
+# set virtual python environment
+pip install
+pip install -e ./      
+```
