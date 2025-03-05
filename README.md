@@ -1,3 +1,6 @@
+### IMPORTANT
+This is a "copy" with custom modifications from [StatsBomb JSON parser](https://github.com/imrankhan17/statsbomb-parser), all credits to the original author. Use at own discretion, no guarantees.
+
 # StatsBomb JSON parser
 
 [![PyPI version](https://badge.fury.io/py/statsbomb.svg)](https://pypi.org/project/statsbomb/)
@@ -105,3 +108,4 @@ docker run -it --rm -v $(pwd):/home -w /home statsbomb-parser python -m pytest -
 pip install
 pip install -e ./      
 ```
+# statsbomb-taha
