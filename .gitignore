@@ -1,27 +1,2 @@
-# Python
-*.pyc
-__pycache__/
-
-# pytest
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Jupyter notebooks
-notebooks/
-*.ipynb
-.ipynb_checkpoints/
-
-# PyCharm
-.idea/
-
-# Virtual environment
-env/
-
-# PyPI
-build/
-dist/
-statsbomb.egg-info/
-
-# data
-*.csv
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*

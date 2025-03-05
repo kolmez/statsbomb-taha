@@ -45,14 +45,11 @@ class BaseParser:
     def get_dataframe(self, **kwargs) -> pd.DataFrame:
         raise NotImplementedError
 
-    def save_data(self, event_type: str = None, tmp: bool = False):
+    def save_data(self, event_types: list[str] = None, tmp: bool = False):
 
-        df = self.get_dataframe(event_type=event_type)
+        df = self.get_dataframe(event_types=[event_types])
 
-        if event_type:
-            file_name = f'{self.__class__.__name__.lower()}_{self.id}_{event_type}.csv'
-        else:
-            file_name = f'{self.__class__.__name__.lower()}_{self.id}.csv'
+        file_name = f'{self.__class__.__name__.lower()}_{self.id}.csv'
 
         if tmp:
             file_path = os.path.join(os.sep, 'tmp', file_name)
