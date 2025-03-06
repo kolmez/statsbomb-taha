@@ -105,7 +105,11 @@ docker run -it --rm -v $(pwd):/home -w /home statsbomb-parser python -m pytest -
 ## FOR TAHA
 ```
 # set virtual python environment
+source ./.venv/bin/activate
 pip install
 pip install -e ./      
+
+# To exit python environment
+deactivate
 ```
 # statsbomb-taha
